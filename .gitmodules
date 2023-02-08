@@ -1,0 +1,3 @@
+[submodule "vendor/apptegy_auth"]
+	path = vendor/apptegy_auth
+	url = git@github.com:apptegy/apptegy_auth.git
