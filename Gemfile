@@ -47,3 +47,4 @@ group :development do
 end
 
 gem 'apptegy_auth', path: './vendor/apptegy_auth'
+gem 'apptegy_feature_flags', path: './vendor/apptegy_feature_flags'

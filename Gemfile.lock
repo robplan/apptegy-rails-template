@@ -4,6 +4,12 @@ PATH
     apptegy_auth (0.1.0)
       omniauth_openid_connect
 
+PATH
+  remote: vendor/apptegy_feature_flags
+  specs:
+    apptegy_feature_flags (0.1.0)
+      flipper-cloud
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -77,6 +83,7 @@ GEM
     bindata (2.4.15)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
+    brow (0.4.1)
     builder (3.2.4)
     concurrent-ruby (1.2.0)
     crass (1.0.6)
@@ -91,6 +98,11 @@ GEM
     faraday-follow_redirects (0.3.0)
       faraday (>= 1, < 3)
     faraday-net_http (3.0.2)
+    flipper (0.26.0)
+      concurrent-ruby (< 2)
+    flipper-cloud (0.26.0)
+      brow (~> 0.4.1)
+      flipper (~> 0.26.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     hashie (5.0.0)
@@ -225,6 +237,7 @@ PLATFORMS
 
 DEPENDENCIES
   apptegy_auth!
+  apptegy_feature_flags!
   bootsnap
   debug
   pg (~> 1.1)
